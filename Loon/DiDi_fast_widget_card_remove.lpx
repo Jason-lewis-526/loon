@@ -1,0 +1,10 @@
+#!name=DiDi Fast Widget Card Remove
+#!desc=Remove data.order_cards.widget_card from DiDi homepage fast config response.
+#!author=Codex
+#!date=2026-06-25
+
+[Rewrite]
+^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/other\/fast\? response-body-json-del data.order_cards.widget_card
+
+[MitM]
+hostname=conf.diditaxi.com.cn
